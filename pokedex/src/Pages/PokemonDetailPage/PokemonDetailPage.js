@@ -1,5 +1,5 @@
 import { Header } from "../../Components/Header/Header";
-import { ContainerAllStats, ContainerImgBack, ContainerImgFront, ContainerImgMain, ContainerImgTypeDetails, ContainerImgs, ContainerListCardDetail, ContainerListCardDetails, ContainerMiniImages, ContainerMoves, ContainerPokemonDetailPage, ContainerTypes, TitleStats } from "./PokemonDetailPageStyle";
+import { ContainerAllStats, ContainerImgBack, ContainerImgFront, ContainerImgMain, ContainerImgTypeDetails, ContainerImgs, ContainerListCardDetails, ContainerMiniImages, ContainerMoves, ContainerPokemonDetailPage, ContainerTypes, TitleStats } from "./PokemonDetailPageStyle";
 
 export const PokemonDetailPage = () => {
   return (
