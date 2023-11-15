@@ -1,11 +1,13 @@
 import { ButtonPokemonCard, ContainerPokemonCard } from "./PokemonCardStyle";
 
-export const PokemonCard = () => {
+export const PokemonCard = (props) => {
+  const { pokemon } = props
+
   return (
     <ContainerPokemonCard>
       <p>id</p>
-      <p>nome</p>
-      <p>tipo</p>
+      <p>{pokemon.name}</p>
+      <p>types</p>
       <p>imagem</p>
       <ButtonPokemonCard>
         <button>botão detalhes</button>
