@@ -2,6 +2,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { ButtonBack, ButtonPokedex, ContainerHeader } from "./HeaderStyle";
 import { goToHome, goToPokedex } from "../../routes/coordinator";
 import { FiChevronLeft } from "react-icons/fi";
+import Logo from "../../assets/Logo.png"
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ export const Header = () => {
   return (
     <ContainerHeader>
       {/* <p>Voltar para Lista/Home</p> */}
-      <img src="https://picsum.photos/300/100" alt="imagem logo Pokedex" />
+      <img src={Logo} alt="imagem logo Pokedex" />
       {pathname === "/" ? ShowButtonPokedex() : ""}
       {pathname === "/pokedex" ? ShowButtonBack() : ""}
       {pathname === "/details" ? ShowButtonBack() : ""}
