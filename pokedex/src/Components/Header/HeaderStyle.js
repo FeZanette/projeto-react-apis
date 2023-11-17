@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ContainerHeader = styled.div`
     padding: 2vh 5vh;
-    background-color: yellow;
+    background-color: #FFFFFF;
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
     justify-content: center;
@@ -11,9 +11,13 @@ export const ContainerHeader = styled.div`
     height: 15vh;
 
     img {
-        height: 10vh;
+        /* height: 10vh; */
         grid-column: 2 / 3;
         justify-self: center;
+        width: 307px;
+        height: 113px;
+        top: 21px;
+        left: 566px
     }
 `
 export const ButtonPokedex = styled.button`

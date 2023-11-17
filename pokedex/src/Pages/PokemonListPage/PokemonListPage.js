@@ -23,7 +23,7 @@ export const PokemonListPage = () => {
     };
     getAllPokemons();
   }, []);
-  
+
   // const getAllPokemons = async () => {
   //   try {
   //     const response = await axios.get(`${BASE_URL}pokemon`);
@@ -38,19 +38,26 @@ export const PokemonListPage = () => {
   //   getAllPokemons();
   // }, []);
 
-    console.log("pokemons:", pokemons);
+  console.log("pokemons:", pokemons);
   return (
     <>
       <Header />
       <ContainerPokemonListPage>
-        <h1>Pokedex List Page - Todos os Pokemons</h1>
+        <h1>Todos os Pokemons</h1>
+
         <ContainerPokemonListCard>
           {/* {pokemons.length === 0 ? (<p>Carregando...</p>) : (pokemons.map((pokemon) => (
             <PokemonCard key={pokemon.id} />
           )))} */}
-          
-          {pokemons.map((pokemon) => (
-            <PokemonCard key={pokemon.name} pokemon={pokemon} />
+          {pokemons.map((pokemon, index) => (
+            <div key={index}>
+              <PokemonCard
+                name={pokemon.name}
+                url={pokemon.url}
+                pokemon={pokemon}
+                setPokemons={setPokemons}
+              />
+            </div>
           ))}
         </ContainerPokemonListCard>
       </ContainerPokemonListPage>
